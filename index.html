@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>share of Miras</h1><br>
+    Total Amount:<br>
+    <input type="number" id="Share"><br><br>
+    <button onclick="let totalAmount=document.getElementById('Share').value;
+    let wifeShare=totalAmount/8;
+    let sonshare=totalAmount-wifeShare;
+    let ful='Total Amount is'+ totalAmount +', the share of waife is ' + wifeShare+' and the share of son is '+sonshare;
+    document.getElementById('heading3').innerText=ful;
+    ">Calculate Share</button>
+    <p id="heading3"></p>
+
+
+    
+</body>
+
+</html>
